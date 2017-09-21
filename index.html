@@ -2,19 +2,66 @@
 <html>
     <head>
         <title>Layout Demo</title>
-        <style>
+       <style>
+		   /*img{
+			   width: 100px;
+		   }*/
             #container{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+				justify-content: space-around;
+				align-items: stretch;
             }
+		   #one
+		   {
+			   order: 4;
+		   }
+		   #two
+		   {
+			   order: 3;
+		   }
+		   #three
+		   {
+			   order: 2;
+		   }
+		   #four
+		   {
+			   order: 1;
+		   }
+		   #five
+		   {
+			   order: -1;
+		   }
+		   #container2
+		   {
+			   display: flex;
+			   flex-direction: row;
+			   max-width: 900px;
+		   }
+		   #left
+		   {
+			   flex-grow: 1;
+			   
+		   }
+		   #right
+		   {
+			   flex-grow: 1;
+		   }
+		   #center
+		   {
+			   flex-grow: 4;
+		   }
         </style>
     </head>
+	<body>
     <div id="container">
         <span id="one"><img src="bird.jpg"/></span>
         <span id="two"><img src="bobcat.jpg"/></span>
         <span id="three"><img src="cat.jpg"/></span>
         <span id="four"><img src="dog.jpg"/></span>
-        <span id="five"><img src="squirrel.jpg"/></span>
+		<span id="five"><img src="squirrel.jpg"/></span>
     </div><!-- container -->
+	
+	</body>
 </html>
